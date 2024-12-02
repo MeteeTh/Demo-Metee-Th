@@ -1,0 +1,28 @@
+{
+    "rewrites": [
+        {
+            "source": "/",
+            "destination": "/index.html"
+        },
+        {
+            "source": "/project-1",
+            "destination": "/project_1.html"
+        },
+        {
+            "source": "/project-2",
+            "destination": "/project_2.html"
+        },
+        {
+            "source": "/project-3",
+            "destination": "/project_3.html"
+        },
+        {
+            "source": "/project-4",
+            "destination": "/project_4.html"
+        },
+        {
+            "source": "/project-5",
+            "destination": "/project_5.html"
+        }
+    ]
+}
