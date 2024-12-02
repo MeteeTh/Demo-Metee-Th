@@ -1,19 +1,32 @@
 :root {
     /* Palette */
+
+
     /* deep-seaweed: #0B1714 */
     --deep-seaweed--l: 19.21%;
     --deep-seaweed--c: 0.018;
     --deep-seaweed--h: 176.73;
+    /* --deep-seaweed--l: 95%;
+    --deep-seaweed--c: 0;
+    --deep-seaweed--h: 0; */
     --deep-seaweed: var(--deep-seaweed--l) var(--deep-seaweed--c) var(--deep-seaweed--h);
-
+    
+    /* ปกติ */
     /* darker-seaweed: #172526 */
+    /* --darker-seaweed--l: 95%;
+    --darker-seaweed--c: 0;
+    --darker-seaweed--h: 0; */
     --darker-seaweed--l: 25.22%;
     --darker-seaweed--c: 0.019;
     --darker-seaweed--h: 201.61;
     --darker-seaweed: var(--darker-seaweed--l) var(--darker-seaweed--c) var(--darker-seaweed--h);
 
     /* oatmeal: #D0BEAD */
+    /* ตอน hover */
     /* เปลี่ยนเป็นสีขาว*/
+    /* --oatmeal--l: 25.22%;
+    --oatmeal--c: 0.019;
+    --oatmeal--h: 201.61; */
     --oatmeal--l: 95%;
     --oatmeal--c: 0;
     --oatmeal--h: 0;
@@ -102,6 +115,7 @@ a.tag,
     border-radius: 100px;
 
     color: whitesmoke;
+    /* color: black; */
 
     display: flex;
     align-items: center;
@@ -151,23 +165,23 @@ a.tag,
     position: relative;
 
     &:nth-of-type(1) .preview-image {
-        background-image: url("/images/Projects/BoardGameShop/mockup_light.png");
+        background-image: url("/images/Projects/BoardGameShop/mockup_dark_new.png");
     }
 
     &:nth-of-type(2) .preview-image {
-        background-image: url("/images/Projects/BoardGameCatalog/mockup_light.png");
+        background-image: url("/images/Projects/BoardGameCatalog/mockup_dark_new.png");
     }
 
     &:nth-of-type(3) .preview-image {
-        background-image: url("/images/Projects/AndyPOS/mockup_light.png");
+        background-image: url("/images/Projects/AndyPOS/mockup_dark_new.png");
     }
 
     &:nth-of-type(4) .preview-image {
-        background-image: url("/images/Projects/AndyWMS/andymenu.png");
+        background-image: url("/images/Projects/AndyWMS/mockup_dark_new.png");
     }
 
     &:nth-of-type(5) .preview-image {
-        background-image: url("/images/Projects/Marvel/Screenshot\ 2024-11-28\ 200114.png");
+        background-image: url("/images/Projects/Marvel/mockup_dark_new.png");
     }
 
     &:nth-of-type(6) .preview-image {
@@ -263,7 +277,7 @@ a.tag,
     }
 
     .preview-image {
-        --bg-scale: 1.15, 1.15;
+        --bg-scale: 1.12, 1.12;
         --bg-position: 50% 50%;
 
         background-size: cover;
@@ -312,6 +326,7 @@ a.tag,
             background: oklch(var(--primary--darkest));
             border-radius: 4px 0 0 0;
             color: oklch(var(--secondary));
+            /* color: oklch(var(--primary--darker)); */
         }
 
         .page {
@@ -462,11 +477,12 @@ a.tag,
         }
 
         .series {
-            background: color-mix(in oklab, currentColor, transparent 90%);
+            background: color-mix(in oklab, currentColor, transparent 80%);
 
             &:hover {
                 background: color-mix(in oklab, currentColor, transparent 80%);
-                color: oklch(var(--primary--darkest));
+                /* color: oklch(var(--primary--darkest)); */
+                color: oklch(var(--primary--darker));
             }
         }
 
@@ -476,12 +492,14 @@ a.tag,
 
             &:hover {
                 background: black;
+                /* background: gainsboro; */
             }
         }
 
         .jsdrp {
             background: rgb(0, 17, 72);
             color: oklch(var(--secondary));
+            /* color: oklch(var(--primary--darker)); */
 
             &:hover {
                 background: rgb(0, 12, 40);
@@ -572,13 +590,20 @@ a.tag,
 
         .tag {
             color: black;
+            /* color: whitesmoke; */
         }
     }
 }
 
 
-@media screen and (min-width: 600px),
-@container grid-item (min-width: 300px) {
+
+@media screen and (min-width: 600px) {
+    .tags--container {
+        flex-wrap: nowrap;
+    }
+}
+
+@container (min-width: 300px) {
     .tags--container {
         flex-wrap: nowrap;
     }
