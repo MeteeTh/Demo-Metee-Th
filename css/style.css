@@ -14243,7 +14243,7 @@ q {
 
 /* @media (max-width: 1199.98px) {
    .social-buttons {
-     width: 50%;
+     width: 100%;
      float: left;
      margin-bottom: 10px;
    }
@@ -14441,11 +14441,8 @@ q {
 
 
 
-
-
 .carousel-item video {
   pointer-events: auto;
-  /* ให้การคลิกในวิดีโอทำงานได้ */
 }
 
 
@@ -14539,7 +14536,7 @@ q {
 .buttons button p {
   padding: 0;
   margin: 0;
-  /* transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1); */
+  transition: all 0.4s cubic-bezier(0, 0.1, 0.25, 1);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -14549,7 +14546,7 @@ q {
 .buttons button p:after {
   position: absolute;
   width: 100%;
-  /* transition: all 0.4s cubic-bezier(0.35, 0.1, 0.25, 1); */
+  transition: all 0.4s cubic-bezier(0, 0.1, 0.25, 1);
   z-index: 1;
   left: 0;
 }
