@@ -102,10 +102,10 @@
 	    }
 		});
 		$('.carousel-testimony').owlCarousel({
-			// center: true,
-			// loop: true,
-			// autoplay: true,
-			// autoplaySpeed:2000,
+			center: true,
+			loop: true,
+			autoplay: true,
+			autoplaySpeed:2000,
 			items:1,
 			margin: 30,
 			stagePadding: 0,
@@ -113,16 +113,16 @@
 			navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
 			responsive:{
 				0:{
-					items: 1,
-					loop: true,
-					autoplay: true,
-					autoplaySpeed:2000
+					items: 1
+					// loop: true,
+					// autoplay: true,
+					// autoplaySpeed:2000
 				},
 				600:{
 					items: 2
 				},
 				1000:{
-					items: 2
+					items: 3
 				}
 			}
 		});
